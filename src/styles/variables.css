@@ -1,0 +1,50 @@
+/** 全局 CSS 变量，这种变量不仅可以在 CSS 和 SCSS 中使用，还可以导入到 JS 中使用 */
+
+:root {
+    /** 全局背景色 */
+    --v3-body-bg-color: #d9dde3;
+    /** Header 区域 = NavigationBar 组件 + TagsView 组件 */
+    --v3-header-height: calc(var(--v3-navigationbar-height));
+    /** NavigationBar 组件 */
+    --v3-navigationbar-height: 50px;
+    /** Sidebar 组件 */
+    --v3-sidebar-width: 220px;
+    --v3-sidebar-hide-width: 58px;
+    --v3-sidebar-menu-item-height: 40px;
+    --v3-sidebar-menu-tip-line-bg-color: var(--el-color-primary);
+    /* --v3-sidebar-menu-bg-color: #414875; */
+    --v3-sidebar-menu-bg-color: #ffffff;
+    --v3-sidebar-menu-hover-bg-color: #fcedec;
+    /* --v3-sidebar-menu-text-color: #c0c4cc; */
+    --v3-sidebar-menu-text-color: #000000;
+    /* --v3-sidebar-menu-active-text-color: #ffffff; */
+    --v3-sidebar-menu-active-text-color: #000000;
+    /** SidebarLogo 组件 */
+    --v3-sidebarlogo-bg-color: #03328d;
+    /** TagsView 组件 */
+    --v3-tagsview-height: 34px;
+    --v3-tagsview-tag-text-color: #495060;
+    --v3-tagsview-tag-active-text-color: #ffffff;
+    --v3-tagsview-tag-bg-color: #ffffff;
+    /* --v3-tagsview-tag-active-bg-color: var(--el-color-primary); */
+    --v3-tagsview-tag-active-bg-color: #03328d;
+    --v3-tagsview-tag-border-radius: 4px;
+    --v3-tagsview-tag-border-color: #d8dce5;
+    --v3-tagsview-tag-active-border-color: var(--el-color-primary);
+    --v3-tagsview-tag-active-before-color: #ffffff;
+    --v3-tagsview-tag-icon-hover-bg-color: #00000030;
+    --v3-tagsview-tag-icon-hover-color: #ffffff;
+    /** RightPanel 组件  */
+    --v3-rightpanel-button-bg-color: #001428;
+    /** app-container 内容  */
+    --v3-container-padding: 5px;
+    /** sf-container 内容  */
+    --v3-container-height: calc(
+        100vh - var(--v3-navigationbar-height) - var(--v3-tagsview-height) - var(--v3-container-padding) -
+            var(--v3-container-padding)
+    );
+    --v3-container-header-height: 40px;
+    /** el-dialog 内容  */
+    --v3-dialog-max-height: 70vh;
+    --v3-dialog-default-height: 168px;
+}

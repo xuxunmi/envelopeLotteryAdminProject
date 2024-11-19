@@ -1,0 +1,54 @@
+@keyframes startFullScreen {
+	0% {
+		position: fixed;
+		top: 0;
+		left: 0;
+		opacity: 0;
+	}
+	100% {
+		position: fixed;
+		top: 0;
+		left: 0;
+		opacity: 1;
+	}
+}
+
+.pt-table {
+	:deep(.el-table) {
+		.el-table__body {
+			tr {
+				cursor: pointer;
+			}
+		}
+		th.el-table__cell {
+			background-color: #f5f7fa !important;
+		}
+		&.el-table--small {
+			.cell {
+				padding: 0 10px;
+				&.el-tooltip {
+					min-width: auto;
+				}
+			}
+		}
+	}
+	&.fullScreen {
+		z-index: 2000;
+		background: #fff;
+		animation: startFullScreen .5s forwards;
+	}
+}
+.dropdown-menu-box {
+	.menu-list-li {
+		display: flex;
+		padding: 0 8px;
+		&:hover {
+			background-color: #f5f7fa;
+		}
+		.drag-handler {
+			margin-right: 4px;
+			font-size: 14px;
+			cursor: pointer;
+		}
+	}
+}

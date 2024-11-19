@@ -1,0 +1,53 @@
+.pt-scrollbar,
+:deep(.pt-scrollbar),
+:deep(.el-table__body-wrapper),
+:deep(.sf-table-wrapper),
+:deep(.sf-form-wrapper),
+:deep(.app-main),
+:deep(.pt-collapse)  {
+    overflow: auto;
+    &::-webkit-scrollbar {
+        height: 10px;
+        width: 10px;
+        background-color: #fff;
+        display: block !important;
+    }
+    // 轨道
+    &::-webkit-scrollbar-track {
+        background-color: #fff;
+    }
+    // 滑块
+    &::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        background-color: #babac0;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #c1c1c1;
+    }
+}
+
+:deep(.el-scrollbar__bar){
+    border-radius: 2px;
+}
+
+// 滚动条一直显示
+:deep(.el-scrollbar__bar.is-horizontal),
+:deep(.el-scrollbar__bar.is-vertical){
+    display: block !important;
+}
+
+// 横向滚动条
+:deep(.el-scrollbar__bar.is-horizontal) {
+    height: 8px;
+}
+
+// 纵向滚动条
+:deep(.el-scrollbar__bar.is-vertical) {
+    width: 10px;
+}
+
+:deep(.el-scrollbar__thumb),
+:deep(.el-scrollbar__thumb:hover) {
+    background-color: #c1c1c1;
+    opacity: 1;
+}

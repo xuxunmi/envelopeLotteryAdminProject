@@ -16,7 +16,7 @@ interface ProjectSettings {
 }
 
 const projectSettings: ProjectSettings = {
-  projectName: '龙工产品配置管理KBOM平台 ',
+  projectName: '短剧管理平台 ',
   projectName2: '',
   hpm: {
     // 测试环境

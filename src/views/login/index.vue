@@ -1,14 +1,14 @@
 <template>
     <div class="login-container">
-        <header>
+        <!-- <header>
             <div class="logo">
                 <img src="@/assets/layout/cropped-logo-half-new.png" />
                 <span>项目计划管理平台</span>
             </div>
-        </header>
+        </header> -->
         <ThemeSwitch v-if="showThemeSwitch" class="theme-switch" />
         <div class="login card">
-            <div class="title">项目计划管理平台</div>
+            <div class="title">{{ projectName }}</div>
             <div class="content">
                 <el-form ref="loginFormRef" :model="loginForm" :rules="loginFormRules" @keyup.enter="handleLogin">
                     <el-form-item prop="username">
@@ -300,7 +300,7 @@ $text-color: #000;
     position: relative;
     min-height: 100%;
     background-color: #1f4e79;
-    padding-top: $header-height;
+    // padding-top: $header-height;
     .theme-switch {
         position: fixed;
         top: 5%;
@@ -383,14 +383,16 @@ $text-color: #000;
     }
     .bg-image {
         position: absolute;
-        top: $header-height;
+        // top: $header-height;
+        top: 0;
         right: 0;
-        height: calc(100% - $header-height);
+        // height: calc(100% - $header-height);
+        height: 100%;
         font-size: 0;
         &::after {
             content: "";
             position: absolute;
-            top: -10px;
+            top: 0;
             right: 0;
             width: 150%;
             height: 100%;

@@ -6,10 +6,10 @@
 2. pnpm 版本 8.x
 
 # 克隆项目
-git clone http://101.227.82.60:8200/pt-group/kbom-front
+git clone https://github.com/xuxunmi/envelopeLotteryAdminProject.git
 
 # 进入项目目录
-cd kbom-front
+cd envelopeLotteryAdminProject
 
 # 安装依赖
 pnpm i
@@ -95,7 +95,7 @@ pnpm test
 
 
 //
-// Created by Web Developer on 2023/10/01.
+// Created by Web Developer on 2024/11/11.
 //
 // (一)本代码的质量保证期（简称“质保期”）为上线内 3 个月，质保期内乙方对所代码实行包修改服务。
 // (二)本代码提供三包服务（包阅读、包编译、包运行）不包熟
@@ -105,7 +105,7 @@ pnpm test
 // ii. 机器机头朝东，比较喜欢太阳的照射
 // iii. 集成此代码的人员，应拒绝黄赌毒，容易诱发本代码性能越来越弱
 // 声明：未履行将视为自主放弃质保期，本人不承担对此产生的一切法律后果
-// 如有问题，欢迎访问: http://101.227.82.60:8200/pt-group/pt-project-front.git
+// 如有问题，欢迎访问: https://github.com/xuxunmi/envelopeLotteryAdminProject.git
 
 /*
  *                        _oo0oo_
